@@ -412,18 +412,35 @@ footer{
         font-size: 2rem;
         visibility: hidden;
     }
+ }
+
+ .box{
+     border-radius: 0.6rem;
+     height: 8rem;
+     width: 10rem;
+     margin: 6rem auto;
+ }
+
+ .box1{
+     background-color: #BDE038;
+ }
 
 
+ .box2{
+     background-color: #BDE038;
+ }
+
+ .box:hover{
+     transform: scale(2);
+ }
 
 
+ .box2{
+     transition-property: all;
+     transition-duration: 3s;
 
+ }
 
-
-
-
-
-
-
-
-
+ .sticky{
+     background-color: #BDE038;
  }
