@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200&family=Oxygen:wght@300&family=Poppins:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+#body{
+    background-color: rgb(32, 32, 32);
+    
+}
+
+
+
+#header{
+    width: 100%;
+    height: 100%;
+    background-color: #BDE038;
+    text-align: right;
+    padding: 3rem 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-flex;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu{
+    text-decoration: black;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto 4rem auto auto;
+    grid-template-areas: "tituloUno  tituloUno " 
+                         "texto texto "
+                         "img1 vid1  "
+                         "subimg1 textoDos ";
+    font-family:'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+.tituloUno{
+    grid-area: tituloUno ;
+    margin: 2rem;
+}
+
+.texto{
+    grid-area: texto ;
+    width: 50%;
+    font-size: medium;
+    align-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+}
+
+figure{
+    display: table-column;
+    align-items: flex-end;
+    
+}
+
+
+.img1{
+    grid-area: img1;
+    width: 25rem;
+    height: 35rem;
+    margin: 1.5rem;
+}
+
+.subimg1{
+    grid-area: subimg1;
+    font-size: 500;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+}
+
+.vid1{
+    grid-area: vid1;
+    width: 47rem;
+    height: 26.5rem;
+}
+
+.textoDos{
+    grid-area: textoDos;
+    font-size: 2rem;
+}
+
+footer{
+    width: 100%;
+    background-color: #BDE038;
+    padding: 0.5rem 0;
+    flex-wrap: nowrap;
+}
+
+
+.footer{
+    display:grid;
+    align-items: flex-start;
+    align-content: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "instagram facebook twitter ";
+    flex-wrap: nowrap;
+    list-style-type: none;
+    justify-items:center ;
+}  
+
+.instagram{
+    width: 2.5rem;
+    grid-area: instagram;
+    margin: 1rem;
+}
+
+.facebook{
+    width: 2.5rem;
+    grid-area: facebook;
+    margin: 1rem;
+}
+
+.twitter{
+    width: 2.5rem;
+    grid-area: twitter;
+    margin: 1rem;
+}
+
+.copy{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2.5rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    #body{
+        background-color: rgb(32, 32, 32);
+        
+    }
+    
+    
+    
+    #header{
+        width: 100%;
+        height: 100%;
+        background-color: #BDE038;
+        text-align: right;
+        padding: 3rem 0;
+    }
+    
+    nav ul li{
+        list-style-type: none;
+        display: inline-flex;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .menu{
+        text-decoration: black;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    
+    #main{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto 4rem auto auto;
+        grid-template-areas: "tituloUno  tituloUno " 
+                             "texto texto "
+                             "img1 vid1  "
+                             "subimg1 textoDos ";
+        font-family:'Oxygen', sans-serif;
+        font-weight: bold;
+    }
+    
+    .tituloUno{
+        grid-area: tituloUno ;
+        margin: 2rem;
+    }
+    
+    .texto{
+        grid-area: texto ;
+        width: 50%;
+        font-size: medium;
+        align-content: center;
+        align-items: center;
+    }
+    
+    p{
+        margin: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: bold;
+    }
+    
+    figure{
+        display: table-column;
+        align-items: flex-end;
+        
+    }
+    
+    
+    .img1{
+        grid-area: img1;
+        width: 25rem;
+        height: 35rem;
+        margin: 1.5rem;
+    }
+    
+    .subimg1{
+        grid-area: subimg1;
+        font-size: 500;
+    }
+    
+    .subtitulo{
+        grid-area: subtitulo;
+    }
+    
+    .vid1{
+        grid-area: vid1;
+        width: 47rem;
+        height: 26.5rem;
+    }
+    
+    .textoDos{
+        grid-area: textoDos;
+        font-size: 2rem;
+    }
+    
+    footer{
+        width: 100%;
+        background-color: #BDE038;
+        padding: 0.5rem 0;
+        flex-wrap: nowrap;
+    }
+    
+    
+    .footer{
+        display:grid;
+        align-items: flex-start;
+        align-content: flex-start;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "instagram facebook twitter ";
+        flex-wrap: nowrap;
+        list-style-type: none;
+        justify-items:center ;
+    }  
+    
+    .instagram{
+        width: 2.5rem;
+        grid-area: instagram;
+        margin: 1rem;
+    }
+    
+    .facebook{
+        width: 2.5rem;
+        grid-area: facebook;
+        margin: 1rem;
+    }
+    
+    .twitter{
+        width: 2.5rem;
+        grid-area: twitter;
+        margin: 1rem;
+    }
+    
+    .copy{
+        display: grid;
+        align-content: center;
+        align-items: center;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 2.5rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 500px){
+
+
+    #header{
+        width: 100%;
+        height: 100%;
+        background-color: #BDE038;
+        text-align: right;
+        padding: 3rem 0;
+    }
+    
+    nav ul li{
+        list-style-type: none;
+        display: inline-flex;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .menu{
+        text-decoration: black;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;}
+
+
+
+    #main{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto 4rem auto auto auto auto;
+        grid-template-areas: "tituloUno  " 
+                             "texto"
+                             "img1"
+                             "subimg1"
+                             "vid1"
+                             "textoDos"
+                             "";
+        font-family:'Oxygen', sans-serif;
+        font-weight: bold;
+     }
+
+
+     .tituloUno{
+        grid-area: tituloUno ;
+        margin: 2rem;
+    }
+    
+    .texto{
+        grid-area: texto ;
+        width: 50%;
+        font-size: medium;
+        align-content: center;
+        align-items: center;
+    }
+    
+    p{
+        margin: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: bold;
+    }
+    
+    figure{
+        display: table-column;
+        align-items: flex-end;
+        
+    }
+    
+    
+    .img1{
+        grid-area: img1;
+        width: 25rem;
+        height: 35rem;
+        margin: 1.5rem;
+    }
+    
+    .subimg1{
+        grid-area: subimg1;
+        font-size: 500;
+    }
+    
+    .subtitulo{
+        grid-area: subtitulo;
+    }
+    
+    .vid1{
+        grid-area: vid1;
+        width: 32rem;
+        height: 17rem;
+        visibility: hidden;
+    }
+    
+    .textoDos{
+        grid-area: textoDos;
+        font-size: 2rem;
+        visibility: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
