@@ -9,13 +9,10 @@ html{
     font-size: 62.5%;
 }
 
-
 #body{
     background-color: rgb(32, 32, 32);
     
 }
-
-
 
 #header{
     width: 100%;
@@ -31,6 +28,7 @@ nav ul li{
     font-family: 'Oxygen', sans-serif;
     font-size: 2rem;
     font-weight: bold;
+    color: black;
 }
 
 .menu{
@@ -57,6 +55,7 @@ nav ul li{
 .tituloUno{
     grid-area: tituloUno ;
     margin: 2rem;
+    color: white;
 }
 
 .texto{
@@ -65,6 +64,7 @@ nav ul li{
     font-size: medium;
     align-content: center;
     align-items: center;
+    color: white;
 }
 
 p{
@@ -73,6 +73,7 @@ p{
     padding-right: 1rem;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
+    color: white;
 }
 
 figure{
@@ -92,10 +93,12 @@ figure{
 .subimg1{
     grid-area: subimg1;
     font-size: 500;
+    color: white;
 }
 
 .subtitulo{
     grid-area: subtitulo;
+    color: white;
 }
 
 .vid1{
@@ -107,11 +110,12 @@ figure{
 .textoDos{
     grid-area: textoDos;
     font-size: 2rem;
+    color: white;
 }
 
 footer{
     width: 100%;
-    background-color: #BDE038;
+    background-color: #198754;
     padding: 0.5rem 0;
     flex-wrap: nowrap;
 }
