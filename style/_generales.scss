@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    nav ul li{
+        list-style-type: none;
+        display: inline-flex;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+    }
+}
+footer{
+    width: 100%;
+    background-color: #198754;
+    padding: 0.5rem 0;
+    flex-wrap: nowrap;
+}
+
+.footer{
+    display:grid;
+    align-items: flex-start;
+    align-content: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "instagram facebook twitter ";
+    flex-wrap: nowrap;
+    list-style-type: none;
+    justify-items:center ;
+
+
+    .instagram{
+        width: 2.5rem;
+        grid-area: instagram;
+        margin: 1rem;
+    }
+    .facebook{
+        width: 2.5rem;
+        grid-area: facebook;
+        margin: 1rem;
+    }
+    .twitter{
+        width: 2.5rem;
+        grid-area: twitter;
+        margin: 1rem;
+    }
+    .copy{
+        display: grid;
+        align-content: center;
+        align-items: center;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        justify-content: center;
+        padding: 1rem;
+        color: black;
+    }
+}  

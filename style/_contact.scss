@@ -1,0 +1,43 @@
+form{
+    width: 45rem;
+    margin: auto;
+    background: #adb5bd;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    border-radius: 0.7rem;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    border: none;
+}
+
+textarea{
+    min-height: 10rem;
+    max-height: 20rem;
+    max-width: 100%;
+}
+.boton{
+    background: #31384A;
+    color: white;
+    padding: 2rem;
+}
+
+@media(max-width:500px){
+    form{
+        width: 100%;
+    }
+}
