@@ -1,0 +1,47 @@
+$redes:(
+    twitter:#55aCee,
+    facebook:#3a5795,
+    instagram:#C25E30
+
+);
+@each $red,$color in $redes {
+     .btn--#{$red}{
+        background-color: $color;
+     }
+    
+};
+
+.redsocial{
+    border: 2px solid black;
+    background-color: darkgreen;
+};
+
+.redsocial--social{
+    @extend .redsocial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;  
+};
+
+.redsocial--nueva{
+    @extend .redsocial;
+    font-size: 30px;
+    color: white;
+};
+
+.redsocial--mark{
+    @extend .redsocial;
+    color: white;
+    font-size: 20px;
+};
+
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.mixin{
+    @include sizes(500px,50px );
+    background-color: darkgreen;
+    color: white;
+}
