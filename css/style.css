@@ -75,14 +75,22 @@ footer {
   color: black;
 }
 
+.body-contacto {
+  background-image: url(../img/fondo-contacto.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 form {
   width: 45rem;
   margin: auto;
   background: #adb5bd;
   padding: 1rem 2rem;
   box-sizing: border-box;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 15rem;
+  margin-bottom: 14.5rem;
   border-radius: 0.7rem;
 }
 
@@ -120,113 +128,171 @@ textarea {
     width: 100%;
   }
 }
-.btn--twitter {
-  background-color: #55aCee;
+.body-exp {
+  background-image: url(../img/bg-exp.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.btn--facebook {
-  background-color: #3a5795;
+.testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.btn--instagram {
-  background-color: #C25E30;
+.testimonios__header {
+  margin: 50px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonios__header span {
+  color: black;
+  font-size: 2.2rem;
+  font-family: "Oxygen", sans-serif;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.testimonios__header h1 {
+  color: black;
+  font-size: 2.9rem;
+  font-weight: 500;
+  font-family: "Oxygen", sans-serif;
+  background-color: #198754;
+  padding: 10px 20px;
 }
 
-.redsocial, .redsocial--mark, .redsocial--nueva, .redsocial--social {
-  border: 2px solid black;
-  background-color: darkgreen;
+.testimonios__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 215px;
 }
-
-.redsocial--social {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
-}
-
-.redsocial--nueva {
-  font-size: 30px;
-  color: white;
-}
-
-.redsocial--mark {
-  color: white;
-  font-size: 20px;
-}
-
-.mixin {
-  height: 50px;
+.testimonios__contenedor .testimonios__caja {
   width: 500px;
-  background-color: darkgreen;
-  color: white;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #adb5bd;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.testimonios__contenedor .perfil {
+  display: flex;
+  align-items: center;
+}
+.testimonios__contenedor .perfil .perfil__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.testimonios__contenedor .perfil .perfil__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: center;
+     object-fit: center;
+}
+.testimonios__contenedor .perfil .name_user {
+  display: flex;
+  flex-direction: column;
+}
+.testimonios__contenedor .perfil .name_user strong {
+  color: #3d3d3d;
+  font-size: 1.4rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+.testimonios__contenedor .perfil .name_user span {
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+}
+.testimonios__contenedor .comentarios__clientes p {
+  color: black;
 }
 
-#main {
+.coontenido_index {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto 4rem auto auto;
-  grid-template-areas: "tituloUno  tituloUno " "texto texto " "img1 vid1  " "subimg1 textoDos ";
-  font-family: "Oxygen", sans-serif;
-  font-weight: bold;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+.coontenido_index .header {
+  grid-area: header;
+}
+.coontenido_index .main {
+  grid-area: main;
+}
+.coontenido_index .footer1 {
+  grid-area: footer;
 }
 
-.tituloUno {
-  grid-area: tituloUno;
+.historia_trajes {
+  margin-bottom: 2rem;
+  background-image: url(../img/bg-indx-1.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.historia_trajes h1 {
+  color: black;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bolder;
+}
+.historia_trajes p {
+  color: black;
+  font-family: "Oxygen", sans-serif;
+  font-size: 2.4rem;
+}
+
+.tipos_de_trajes h2 {
+  color: black;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bolder;
+}
+.tipos_de_trajes p {
+  color: black;
+  font-family: "Oxygen", sans-serif;
+  font-size: 2.4rem;
+}
+
+.carousel-caption h5 {
+  color: black;
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-family: "Oxygen", sans-serif;
+}
+.carousel-caption p {
+  color: black;
+  font-size: 2.1rem;
+  font-weight: bolder;
+  font-family: "Oxygen", sans-serif;
+}
+
+.trajes {
   margin: 2rem;
-  color: white;
 }
-
-.texto {
-  grid-area: texto;
-  width: 50%;
-  font-size: medium;
-  align-content: center;
-  align-items: center;
-  color: white;
-}
-
-p {
-  margin: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.trajes h3 {
+  color: black;
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
-  color: white;
+  align-items: center;
 }
-
-figure {
-  display: table-column;
-  align-items: flex-end;
-}
-
-.img1 {
-  grid-area: img1;
-  width: 25rem;
-  height: 35rem;
-  margin: 1.5rem;
-}
-
-.subimg1 {
-  grid-area: subimg1;
-  font-size: 500;
-  color: white;
-}
-
-.subtitulo {
-  grid-area: subtitulo;
-  color: white;
-}
-
-.vid1 {
-  grid-area: vid1;
-  width: 47rem;
-  height: 26.5rem;
-}
-
-.textoDos {
-  grid-area: textoDos;
-  font-size: 2rem;
-  color: white;
+.trajes p {
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -243,70 +309,6 @@ figure {
             text-decoration: black;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  #main {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 4rem auto auto;
-    grid-template-areas: "tituloUno  tituloUno " "texto texto " "img1 vid1  " "subimg1 textoDos ";
-    font-family: "Oxygen", sans-serif;
-    font-weight: bold;
-  }
-
-  .tituloUno {
-    grid-area: tituloUno;
-    margin: 2rem;
-  }
-
-  .texto {
-    grid-area: texto;
-    width: 50%;
-    font-size: medium;
-    align-content: center;
-    align-items: center;
-  }
-
-  p {
-    margin: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-family: "Oxygen", sans-serif;
-    font-weight: bold;
-  }
-
-  figure {
-    display: table-column;
-    align-items: flex-end;
-  }
-
-  .img1 {
-    grid-area: img1;
-    width: 25rem;
-    height: 35rem;
-    margin: 1.5rem;
-  }
-
-  .subimg1 {
-    grid-area: subimg1;
-    font-size: 500;
-  }
-
-  .subtitulo {
-    grid-area: subtitulo;
-  }
-
-  .vid1 {
-    grid-area: vid1;
-    width: 47rem;
-    height: 26.5rem;
-  }
-
-  .textoDos {
-    grid-area: textoDos;
-    font-size: 2rem;
   }
 
   footer {
@@ -378,71 +380,5 @@ figure {
             text-decoration: black;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  #main {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 4rem auto auto auto auto;
-    grid-template-areas: "tituloUno  " "texto" "img1" "subimg1" "vid1" "textoDos" "";
-    font-family: "Oxygen", sans-serif;
-    font-weight: bold;
-  }
-
-  .tituloUno {
-    grid-area: tituloUno;
-    margin: 2rem;
-  }
-
-  .texto {
-    grid-area: texto;
-    width: 50%;
-    font-size: medium;
-    align-content: center;
-    align-items: center;
-  }
-
-  p {
-    margin: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-family: "Oxygen", sans-serif;
-    font-weight: bold;
-  }
-
-  figure {
-    display: table-column;
-    align-items: flex-end;
-  }
-
-  .img1 {
-    grid-area: img1;
-    width: 25rem;
-    height: 35rem;
-    margin: 1.5rem;
-  }
-
-  .subimg1 {
-    grid-area: subimg1;
-    font-size: 500;
-  }
-
-  .subtitulo {
-    grid-area: subtitulo;
-  }
-
-  .vid1 {
-    grid-area: vid1;
-    width: 32rem;
-    height: 17rem;
-    visibility: hidden;
-  }
-
-  .textoDos {
-    grid-area: textoDos;
-    font-size: 2rem;
-    visibility: hidden;
   }
 }/*# sourceMappingURL=style.css.map */

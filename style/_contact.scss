@@ -1,11 +1,19 @@
+.body-contacto{
+    background-image: url(../img/fondo-contacto.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 form{
     width: 45rem;
     margin: auto;
     background: #adb5bd;
     padding: 1rem 2rem;
     box-sizing: border-box;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-top: 15rem;
+    margin-bottom: 14.5rem;
     border-radius: 0.7rem;
 }
 
