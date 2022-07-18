@@ -1,0 +1,32 @@
+.bg__aboutus{
+    background-color: rgb(243, 241, 241);
+}
+
+.user-content{
+    p{
+        font-size: medium;
+        font-family: 'Oxygen', sans-serif;
+    }
+}
+.page_header{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.quienes_somos{
+    width: 640px;
+    height: 660px;
+    box-sizing: content-box;
+    justify-content: center;
+    object-fit: contain;
+}
+.row{
+--bs-gutter-x:var(--bs-gutter-x)0;
+}
+
+@media screen and(max-width:642px) {
+    .quienes_somos{
+        width: 100vw;
+    }
+    
+}

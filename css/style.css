@@ -219,6 +219,8 @@ textarea {
 }
 .testimonios__contenedor .comentarios__clientes p {
   color: black;
+  font-family: "Oxygen", sans-serif;
+  font-weight: bolder;
 }
 
 .contenido_service {
@@ -232,23 +234,24 @@ textarea {
 .contenido_service .header {
   grid-area: header;
 }
-.contenido_service .main {
+.contenido_service .main__service {
   grid-area: main;
 }
 .contenido_service .footer1 {
   grid-area: footer;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: " titulos productos" "productos productos" "productos productos" "productos productos";
+.main__service {
+  display: flex;
+  flex-direction: column;
 }
-.main .titulos {
+.main__service .titulos {
   grid-area: titulos;
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
 }
-.main .productos {
+.main__service .productos {
   grid-area: producto;
 }
 
@@ -265,9 +268,9 @@ h2 {
   width: 100%;
 }
 .productos .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
   flex-wrap: wrap;
 }
 .productos .contenedor__productos {
@@ -277,6 +280,7 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 .productos .contenedor__productos .producto {
@@ -377,8 +381,41 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    margin-top: 40px;
     margin-bottom: 20px;
     grid-area: productos;
+  }
+}
+.bg__aboutus {
+  background-color: rgb(243, 241, 241);
+}
+
+.user-content p {
+  font-size: medium;
+  font-family: "Oxygen", sans-serif;
+}
+
+.page_header {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.quienes_somos {
+  width: 640px;
+  height: 660px;
+  box-sizing: content-box;
+  justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.row {
+  --bs-gutter-x:var(--bs-gutter-x)0;
+}
+
+@media screen and (max-width: 642px) {
+  .quienes_somos {
+    width: 100vw;
   }
 }
 .coontenido_index {
@@ -400,8 +437,7 @@ h2 {
 }
 
 .historia_trajes {
-  margin-bottom: 2rem;
-  background-image: url(../img/bg-indx-1.jpg);
+  background-image: url(../img/bg-exp.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -416,12 +452,21 @@ h2 {
   color: black;
   font-family: "Oxygen", sans-serif;
   font-size: 2.4rem;
+  margin-bottom: 0;
 }
 
+.tipos_de_trajes {
+  background-image: url(../img/bg-exp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
 .tipos_de_trajes h2 {
   color: black;
   font-family: "Oxygen", sans-serif;
   font-weight: bolder;
+  padding-top: 10px;
 }
 .tipos_de_trajes p {
   color: black;
@@ -440,6 +485,12 @@ h2 {
   font-size: 2.1rem;
   font-weight: bolder;
   font-family: "Oxygen", sans-serif;
+}
+
+.posi_trajes {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
 }
 
 .trajes {
@@ -468,6 +519,11 @@ h2 {
             text-decoration: black;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .posi_trajes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
   footer {
     width: 100%;
